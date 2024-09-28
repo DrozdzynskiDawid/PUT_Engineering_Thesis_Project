@@ -1,0 +1,12 @@
+Dockerfile
+docker-compose.yml
+.gitignore
+NLPToolkit.egg-info
+.github
+.idea
+junit
+dist
+build
+run.sh
+stop.sh
+README.md
