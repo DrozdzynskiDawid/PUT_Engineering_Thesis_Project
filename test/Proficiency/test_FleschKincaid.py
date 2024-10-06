@@ -1,6 +1,6 @@
 import unittest
 from NLPToolkit.Proficiency.FleschKincaid import *
-from TestHelper import *
+from .TestHelper import *
 
 
 class TestFleschKincaid(unittest.TestCase):

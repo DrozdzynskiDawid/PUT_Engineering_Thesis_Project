@@ -1,6 +1,6 @@
 import unittest
 from NLPToolkit.Proficiency.SMOG import *
-from TestHelper import *
+from .TestHelper import *
 
 
 class TestSMOG(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 from NLPToolkit.Proficiency.Rayor import *
-from TestHelper import *
+from .TestHelper import *
 
 
 class TestRayor(unittest.TestCase):

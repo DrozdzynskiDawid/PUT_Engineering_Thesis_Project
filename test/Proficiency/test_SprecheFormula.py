@@ -1,6 +1,6 @@
 import unittest
 from NLPToolkit.Proficiency.SpracheFormula import *
-from TestHelper import *
+from .TestHelper import *
 
 
 class TestSpracheFormula(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 from NLPToolkit.Proficiency.LinearWhite import *
-from TestHelper import *
+from .TestHelper import *
 
 
 class TestLinearWhite(unittest.TestCase):
