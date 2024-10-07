@@ -1,6 +1,6 @@
 import random
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def forcast(text: str):
@@ -21,6 +21,6 @@ def forcast(text: str):
 
     try:
         score = 20 - (oneSyllables * lengthText) / (words * 10)
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

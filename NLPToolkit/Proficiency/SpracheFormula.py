@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def spracheOriginalFormula(text: str):
@@ -14,7 +14,7 @@ def spracheOriginalFormula(text: str):
         avgSentenceLength = words / sentences
         perDifficult = difficultWords / words * 100
         score = 0.141 * avgSentenceLength + 0.086 * perDifficult + 0.839
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()
 
@@ -31,6 +31,6 @@ def spracheRevisedFormula(text: str):
         avgSentenceLength = words / sentences
         perDifficult = difficultWords / words * 100
         score = 0.121 * avgSentenceLength + 0.082 * perDifficult + 0.659
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

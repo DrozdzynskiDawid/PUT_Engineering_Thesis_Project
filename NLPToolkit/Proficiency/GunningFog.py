@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def gunningFog(text: str):
@@ -12,6 +12,6 @@ def gunningFog(text: str):
 
     try:
         score = 0.4 * ((words / sentences) + 100 * (complexWords / words))
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

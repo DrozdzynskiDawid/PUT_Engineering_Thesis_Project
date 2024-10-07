@@ -1,8 +1,15 @@
 import spacy
 import textstat
+from spacy.language import Language
 from spacy.tokens import Token
 import importlib.resources
 
+
+@Language.component("syllables")
+def syllables_component(doc):
+    if not Token.has_extension("syllables_count"):
+        Token.set_extension("syllables_count", getter=lambda token: textstat.syllable_count(token.text))
+    return doc
 
 class CounterHelper:
     text: str
@@ -74,9 +81,7 @@ class CounterHelper:
     def getSyllables(self):
         nlp = spacy.load("en_core_web_sm")
         nlp.add_pipe("syllables", after="tagger")
-        doc = nlp(self.text)
-
-        Token.set_extension("syllables_count", getter=lambda token: textstat.syllable_count(token.text), force=True)
+        doc = nlp(self.text)\
 
         return sum([token._.syllables_count for token in doc if not token.is_punct and not token.is_digit])
 

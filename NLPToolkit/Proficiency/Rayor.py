@@ -1,1 +1,1 @@
-from .ModuleExcetion import *
+from .ModuleException import *

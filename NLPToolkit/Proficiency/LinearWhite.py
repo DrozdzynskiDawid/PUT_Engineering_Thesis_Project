@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 import random
 
 
@@ -11,13 +11,14 @@ def linearWhite(text: str):
         counter = CounterHelper(text)
     else:
         textPrim = random.sample(text.split(), 100)
-        counter = CounterHelper(textPrim)
+        counter = CounterHelper(" ".join(textPrim))
     try:
+
         r = (3 * counter.getComplexWords() + counter.getEasyWords()) / counter.getSentences()
 
         if r > 20:
-            return r / 2
+            return round(r / 2, 2)
         else:
-            return r / 2 - 1
+            return round(r / 2 - 1, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

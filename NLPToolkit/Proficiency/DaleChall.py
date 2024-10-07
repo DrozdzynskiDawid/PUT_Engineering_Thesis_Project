@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def daleChall(text: str):
@@ -15,6 +15,6 @@ def daleChall(text: str):
         if round(difficultWords / words, 2) * 100 > 0.05:
             score += 3.6365
 
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

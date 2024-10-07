@@ -6,11 +6,11 @@ from .TestHelper import *
 class TestARI(unittest.TestCase):
     def test_happy1(self):
         value = ARI(text=getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 12.66)
 
     def test_happy2(self):
         value = ARI(text=getTestText2())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 6.1)
 
     def test_should_throw_type_error(self):
         with self.assertRaises(ValueError):

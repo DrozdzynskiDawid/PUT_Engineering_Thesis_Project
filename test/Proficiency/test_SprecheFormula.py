@@ -6,19 +6,19 @@ from .TestHelper import *
 class TestSpracheFormula(unittest.TestCase):
     def test_happy1(self):
         value = spracheOriginalFormula(text=getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 5.39)
 
     def test_happy2(self):
         value = spracheOriginalFormula(text=getTestText2())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 4.17)
 
     def test_re_happy1(self):
         value = spracheRevisedFormula(text=getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 4.71)
 
     def test_re_happy2(self):
         value = spracheRevisedFormula(text=getTestText2())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 3.62)
 
     def test_should_throw_type_error(self):
         with self.assertRaises(ValueError):

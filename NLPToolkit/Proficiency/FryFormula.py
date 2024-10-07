@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def fryFormula(text: str):
@@ -10,7 +10,7 @@ def fryFormula(text: str):
     syllables = counter.getSyllables()
 
     try:
-        return gradeGraph(syllables / 100, sentences / 100)
+        return round(gradeGraph(syllables / 100, sentences / 100), 2)
     except ZeroDivisionError:
         getDivideByZeroError()
 

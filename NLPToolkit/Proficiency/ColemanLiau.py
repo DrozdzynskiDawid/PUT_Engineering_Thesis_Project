@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def colemanLiau(text: str):
@@ -12,6 +12,6 @@ def colemanLiau(text: str):
 
     try:
         score = 0.0588 * round((characters / words) * 100) - 0.296 * round((sentences / words) * 100, 2) - 15.8
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

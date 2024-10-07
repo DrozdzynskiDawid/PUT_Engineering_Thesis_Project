@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def ARI(text: str):
@@ -12,6 +12,6 @@ def ARI(text: str):
 
     try:
         score = 4.71 * (characters / words) + 0.5 * (words / sentences) - 21.43
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

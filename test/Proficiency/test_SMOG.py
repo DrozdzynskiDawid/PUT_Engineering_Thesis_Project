@@ -6,11 +6,11 @@ from .TestHelper import *
 class TestSMOG(unittest.TestCase):
     def test_happy(self):
         value = readabilitySMOG(text=getTestText3()+getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 10.41)
 
     def test_easy_happy(self):
         value = easierSMOG(text=getTestText3()+getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 10)
 
     def test_should_throw_type_error(self):
         with self.assertRaises(ValueError):

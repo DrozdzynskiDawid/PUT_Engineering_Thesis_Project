@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleExcetion import *
+from .ModuleException import *
 
 
 def fleschKincaid(text: str):
@@ -12,7 +12,7 @@ def fleschKincaid(text: str):
 
     try:
         score = 206.835 - 1.015 * (words / sentences) - 84.6 * (syllables / words)
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()
 
@@ -27,6 +27,6 @@ def gradeLevelFleschKincaid(text: str):
 
     try:
         score = 0.39 * (words / sentences) + 11.8 * (syllables / words) - 15.59
-        return score
+        return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

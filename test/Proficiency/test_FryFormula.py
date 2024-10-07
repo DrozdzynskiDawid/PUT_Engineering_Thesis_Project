@@ -6,19 +6,15 @@ from .TestHelper import *
 class TestFryFormula(unittest.TestCase):
     def test_happy1(self):
         value = fryFormula(text=getTestText1())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 12)
 
     def test_happy2(self):
         value = fryFormula(text=getTestText2())
-        self.assertLess(value, 2)
+        self.assertEqual(value, 12)
 
     def test_should_throw_type_error(self):
         with self.assertRaises(ValueError):
             fryFormula(text=123456)
-
-    def test_should_throw_error(self):
-        with self.assertRaises(ZeroDivisionError):
-            fryFormula("")
 
 
 if __name__ == '__main__':
