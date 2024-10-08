@@ -6,7 +6,5 @@ def getTypeError():
     raise ValueError("Error: Type must be text")
 
 
-def getStatisticError():
-    raise Exception(
-        "Error: Text fewer than 30 sentences are statistically invalid, because the formula was normed on 30-sentence "
-        "samples")
+def getStatisticError(textError:str):
+    raise Exception("Error: Text fewer than "+textError+" are statistically invalid.")

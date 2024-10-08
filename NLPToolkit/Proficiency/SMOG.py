@@ -10,7 +10,7 @@ def readabilitySMOG(text: str):
     sentences = counter.getSentences()
     complexWords = counter.getComplexWords()
     if sentences < 30:
-        getStatisticError()
+        getStatisticError("30 sentences")
 
     try:
         score = 1.043 * math.sqrt(complexWords * (30 / sentences)) + 3.1291
@@ -26,7 +26,7 @@ def easierSMOG(text: str):
     sentences = counter.getSentences()
     complexWords = counter.getComplexWords()
     if sentences < 30:
-        getStatisticError()
+        getStatisticError("30 sentences")
 
     try:
         score = round(math.sqrt((complexWords * (30 / sentences)))) + 3
