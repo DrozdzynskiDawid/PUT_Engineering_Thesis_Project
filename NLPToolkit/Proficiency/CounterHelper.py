@@ -54,7 +54,7 @@ class CounterHelper:
 
         return listWord
 
-    def getDifficultWords(self, file):
+    def getDifficultWords(self, file='dale_chall_word_list.txt'):
         wordFrom = self.listFromFile(file)
         count = 0
         doc = self.setup()
