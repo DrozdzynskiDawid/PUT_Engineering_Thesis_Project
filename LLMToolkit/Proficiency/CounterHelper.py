@@ -42,7 +42,7 @@ class CounterHelper:
         return nlp(" ".join(words))
 
     def listFromFile(self, file):
-        with importlib.resources.open_text('NLPToolkit.Proficiency', 'dale_chall_word_list.txt') as file:
+        with importlib.resources.open_text('LLMToolkit.Proficiency', 'dale_chall_word_list.txt') as file:
             words = file.read().splitlines()
 
         listWord = set()
@@ -54,7 +54,7 @@ class CounterHelper:
 
         return listWord
 
-    def getDifficultWords(self, file):
+    def getDifficultWords(self, file='dale_chall_word_list.txt'):
         wordFrom = self.listFromFile(file)
         count = 0
         doc = self.setup()

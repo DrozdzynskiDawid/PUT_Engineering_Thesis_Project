@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.FORCAST import *
+from LLMToolkit.Proficiency.FORCAST import *
 from .TestHelper import *
 
 

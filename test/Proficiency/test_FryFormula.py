@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.FryFormula import *
+from LLMToolkit.Proficiency.FryFormula import *
 from .TestHelper import *
 
 

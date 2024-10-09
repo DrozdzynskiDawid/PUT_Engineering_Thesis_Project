@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.DaleChall import *
+from LLMToolkit.Proficiency.DaleChall import *
 from .TestHelper import *
 
 

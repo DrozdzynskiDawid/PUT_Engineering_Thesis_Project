@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.RaygorEstimate import *
+from LLMToolkit.Proficiency.RaygorEstimate import *
 from .TestHelper import *
 
 

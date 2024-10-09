@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.AutomatedReadabilityIndex import ARI
+from LLMToolkit.Proficiency.AutomatedReadabilityIndex import ARI
 from .TestHelper import *
 
 

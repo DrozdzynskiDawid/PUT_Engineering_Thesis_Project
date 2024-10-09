@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.GunningFog import *
+from LLMToolkit.Proficiency.GunningFog import *
 from .TestHelper import *
 
 
