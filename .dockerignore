@@ -1,7 +1,7 @@
 Dockerfile
 docker-compose.yml
 .gitignore
-NLPToolkit.egg-info
+LLMToolkit.egg-info
 .github
 .idea
 junit

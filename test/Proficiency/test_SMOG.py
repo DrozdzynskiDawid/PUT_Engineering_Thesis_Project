@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.SMOG import *
+from LLMToolkit.Proficiency.SMOG import *
 from .TestHelper import *
 
 

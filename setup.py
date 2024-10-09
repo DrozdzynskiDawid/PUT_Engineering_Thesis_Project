@@ -1,11 +1,11 @@
 from setuptools import find_packages, setup
 
 setup(
-    name='NLPToolkit',
-    packages=find_packages(include=['NLPToolkit']),
+    name='LLMToolkit',
+    packages=find_packages(include=['LLMToolkit']),
     include_package_data=True,
     version='0.0.0',
-    description='NLPToolkit library',
+    description='LLMToolkit library',
     author='Wiktoria Dębowska, Dawid Drożdżyński, Jakub Filipiak, Miłosz Kozlicki',
     install_requires=[],
     extras_require={

@@ -11,7 +11,7 @@ venv.bak/
 .idea/
 
 # Tests
-NLPToolkit.egg-info
+LLMToolkit.egg-info
 .idea
 junit
 dist

@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.FleschKincaid import *
+from LLMToolkit.Proficiency.FleschKincaid import *
 from .TestHelper import *
 
 

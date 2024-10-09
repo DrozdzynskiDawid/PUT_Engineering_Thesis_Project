@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.SpracheFormula import *
+from LLMToolkit.Proficiency.SpracheFormula import *
 from .TestHelper import *
 
 

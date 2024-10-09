@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.LinearWhite import *
+from LLMToolkit.Proficiency.LinearWhite import *
 from .TestHelper import *
 
 

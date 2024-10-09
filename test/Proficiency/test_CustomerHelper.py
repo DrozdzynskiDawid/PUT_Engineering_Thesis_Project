@@ -1,5 +1,5 @@
 import unittest
-from NLPToolkit.Proficiency.CounterHelper import *
+from LLMToolkit.Proficiency.CounterHelper import *
 from .TestHelper import *
 
 class TestColemanLiau(unittest.TestCase):
