@@ -81,7 +81,7 @@ class CounterHelper:
     def getSyllables(self):
         nlp = spacy.load("en_core_web_sm")
         nlp.add_pipe("syllables", after="tagger")
-        doc = nlp(self.text)\
+        doc = nlp(self.text)
 
         return sum([token._.syllables_count for token in doc if not token.is_punct and not token.is_digit])
 

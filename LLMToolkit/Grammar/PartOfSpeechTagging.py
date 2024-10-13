@@ -9,3 +9,13 @@ def getPartOfSpeechTagging(text: str):
     doc = nlp(text)
     pos_counts = Counter(token.pos_ for token in doc)
     return pos_counts
+
+def getNouns(text: str):
+    result = getPartOfSpeechTagging(text)
+    nouns = result['NOUN']
+    return nouns
+
+def getVerbs(text: str):
+    result = getPartOfSpeechTagging(text)
+    verbs = result['VERB']
+    return verbs

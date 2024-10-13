@@ -30,6 +30,7 @@ MarkupSafe==2.1.5
 mdurl==0.1.2
 more-itertools==10.5.0
 murmurhash==1.0.10
+nltk==3.8.1
 nh3==0.2.18
 numpy==1.26.4
 packaging==24.1

@@ -1,5 +1,6 @@
 from .PartOfSpeechTagging import *
 
 __all__ = [
-    'PartOfSpeechTagging'
+    'PartOfSpeechTagging',
+    'GrammaticalErrorRate'
 ]

@@ -7,4 +7,5 @@ COPY requirements.txt /app/LLMToolkit
 RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/LLMToolkit
 
-CMD [ "python3", "-m", "unittest", "discover", "-s", "test", "-p", "\"test_*.py\"" ]
+RUN python3 -m nltk.downloader punkt
+CMD ["python3", "-m", "unittest", "discover", "-s", "test", "-p", "test_*.py"]

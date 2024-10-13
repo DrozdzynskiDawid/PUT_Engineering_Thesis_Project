@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.FryFormula import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestFryFormula(unittest.TestCase):
