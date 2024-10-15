@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.FORCAST import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestFORCAST(unittest.TestCase):
