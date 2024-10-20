@@ -5,7 +5,7 @@ from .FleschKincaid import *
 from .FORCAST import *
 from .FryFormula import *
 from .GunningFog import *
-from .LinearWhite import *
+from .LinsearWrite import *
 from .RaygorEstimate import *
 from .SMOG import *
 from .SpracheFormula import *
@@ -19,7 +19,7 @@ __all__ = [
     'FORCAST',
     'FryFormula',
     'GunningFog',
-    'LinearWhite',
+    'LinsearWrite',
     'RaygorEstimate',
     'SMOG',
     'SpracheFormula',

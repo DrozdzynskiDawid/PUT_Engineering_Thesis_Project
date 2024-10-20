@@ -1,3 +1,5 @@
 include LLMToolkit/Proficiency/dale_chall_word_list.txt
 include LLMToolkit/Proficiency/*.py
 include LLMToolkit/Grammar/*.py
+include LLMToolkit/Proficiency/Fry_Graph.png
+include LLMToolkit/Proficiency/Raygor.png
