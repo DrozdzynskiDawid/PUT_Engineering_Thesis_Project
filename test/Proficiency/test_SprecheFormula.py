@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.SpracheFormula import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestSpracheFormula(unittest.TestCase):

@@ -1,5 +1,7 @@
 from .Proficiency import *
+from .Grammar import *
 
 __all__ = [
-    'Proficiency'
+    'Proficiency',
+    'Grammar'
 ]

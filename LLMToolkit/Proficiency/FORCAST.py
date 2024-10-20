@@ -1,6 +1,6 @@
 import random
 from .CounterHelper import *
-from .ModuleException import *
+from ..ModuleException import *
 
 
 def forcast(text: str):

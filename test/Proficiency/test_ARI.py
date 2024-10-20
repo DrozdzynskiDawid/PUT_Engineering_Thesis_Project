@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.AutomatedReadabilityIndex import ARI
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestARI(unittest.TestCase):

@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.RaygorEstimate import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestRayor(unittest.TestCase):
