@@ -3,7 +3,7 @@ from ..ModuleException import *
 import random
 
 
-def linearWhite(text: str):
+def linsearWrite(text: str):
     if type(text) != str:
         getTypeError()
 
