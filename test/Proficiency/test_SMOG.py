@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.SMOG import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestSMOG(unittest.TestCase):

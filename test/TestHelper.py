@@ -67,3 +67,9 @@ cosmic web. From the smallest particle to the largest galaxy, the universe is an
 bound by the laws of physics and yet filled with mysteries waiting to be uncovered."""
 
     return text
+
+def getTestText4():
+    text = ("Yesterday, I seen a beautiful park near my house. The flowers was blooming brightly and the trees was "
+            "full of leaves. I decides to take a walk and enjoy the nice weather. Many peoples were there, some playing games"
+            " and other were having picnics. It was a lovely day, but I forget to bring my water bottle.")
+    return text

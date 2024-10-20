@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.FleschKincaid import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestFleschKincaid(unittest.TestCase):

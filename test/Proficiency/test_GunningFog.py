@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.GunningFog import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestGunningFog(unittest.TestCase):

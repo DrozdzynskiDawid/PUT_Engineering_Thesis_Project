@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.CounterHelper import *
-from .TestHelper import *
+from test.TestHelper import *
 
 class TestColemanLiau(unittest.TestCase):
     def test_get_words(self):

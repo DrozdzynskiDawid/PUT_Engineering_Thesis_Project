@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.ColemanLiau import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestColemanLiau(unittest.TestCase):

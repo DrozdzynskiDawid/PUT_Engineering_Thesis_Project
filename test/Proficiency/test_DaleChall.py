@@ -1,6 +1,6 @@
 import unittest
 from LLMToolkit.Proficiency.DaleChall import *
-from .TestHelper import *
+from test.TestHelper import *
 
 
 class TestDaleChall(unittest.TestCase):

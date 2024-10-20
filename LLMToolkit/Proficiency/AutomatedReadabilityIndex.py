@@ -1,5 +1,5 @@
 from .CounterHelper import *
-from .ModuleException import *
+from ..ModuleException import *
 
 
 def ARI(text: str):
