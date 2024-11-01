@@ -1,7 +1,7 @@
 from .PartOfSpeechTagging import *
-from .GrammaticalErrorRate import *
+from .GrammaticalErrorRateByLanguageTool import *
 
 __all__ = [
     'PartOfSpeechTagging',
-    'GrammaticalErrorRate'
+    'GrammaticalErrorRateByLanguageTool'
 ]

@@ -3,7 +3,7 @@ from LLMToolkit.Grammar.GrammaticalErrorRateByLanguageTool import *
 from test.TestHelper import *
 
 
-class TestGrammaticalErrorRate(unittest.TestCase):
+class TestGrammaticalErrorRateByLanguageTool(unittest.TestCase):
     def test_text_with_no_errors(self):
         value = getGER(text=getTestText1())
         self.assertEqual(value[0], 0.0)
