@@ -2,11 +2,11 @@ from ..ModuleException import *
 import requests
 import nltk
 
-def check(text: str):
+def check(text: str, language: str = 'en-US'):
     api_url = "https://api.languagetool.org/v2/check"
     data = {
             'text': text,
-            'language': 'en-US',
+            'language': language,
         }
     response = requests.post(api_url, data=data)
     matches = response.json().get('matches', [])
@@ -25,4 +25,4 @@ def getGER(text: str):
         if matches:
             count_errors += 1
 
-    return count_errors / sentences_length * 100
+    return (count_errors / sentences_length * 100, matches)
