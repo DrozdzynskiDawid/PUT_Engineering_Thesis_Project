@@ -19,10 +19,10 @@ def getGER(text: str):
     sentences = nltk.tokenize.sent_tokenize(text)
     sentences_length = len(sentences)
     count_errors = 0
-
+    all_matches = check(text)
     for s in sentences:
         matches = check(s)
         if matches:
             count_errors += 1
 
-    return (count_errors / sentences_length * 100, matches)
+    return (count_errors / sentences_length * 100, all_matches)
