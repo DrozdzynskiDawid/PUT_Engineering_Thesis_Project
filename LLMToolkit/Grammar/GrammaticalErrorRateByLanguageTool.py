@@ -2,8 +2,9 @@ from ..ModuleException import *
 import requests
 import nltk
 
-def check(text: str, language: str = 'en-US'):
-    api_url = "https://api.languagetool.org/v2/check"
+api_url = "https://api.languagetool.org/v2/check"
+
+def check(text: str, language: str = 'auto'):
     data = {
             'text': text,
             'language': language,
