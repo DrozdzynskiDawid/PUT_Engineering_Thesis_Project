@@ -45,6 +45,7 @@ Pygments==2.18.0
 pyphen==0.16.0
 pytest==8.3.3
 pytest-runner==6.0.1
+pyspellchecker==0.7.2
 readme_renderer==44.0
 requests==2.32.3
 requests-toolbelt==1.0.0
