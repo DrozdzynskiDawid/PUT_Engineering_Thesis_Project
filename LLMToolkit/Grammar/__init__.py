@@ -3,5 +3,6 @@ from .GrammaticalErrorRateByLanguageTool import *
 
 __all__ = [
     'PartOfSpeechTagging',
-    'GrammaticalErrorRateByLanguageTool'
+    'GrammaticalErrorRateByLanguageTool',
+    'GrammaticalErrorRateByIKorektor'
 ]

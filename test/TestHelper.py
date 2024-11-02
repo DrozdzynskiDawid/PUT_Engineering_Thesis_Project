@@ -73,3 +73,7 @@ def getTestText4():
             "full of leaves. I decides to take a walk and enjoy the nice weather. Many peoples were there, some playing games"
             " and other were having picnics. It was a lovely day, but I forget to bring my water bottle.")
     return text
+
+def getTestText5():
+    text = "Na dworze jest piękna pogoda, słońce świeci jasno. Chciałbym pójść na spacer, ale zapomniałem mojej kurtki. Moja przyjaciółka powiedziała, że ona kupiła nowe buty, które są bardzo wygodne. Jednak, ja nie jestem pewien czy one będą dobrze pasować na mnie."
+    return text
