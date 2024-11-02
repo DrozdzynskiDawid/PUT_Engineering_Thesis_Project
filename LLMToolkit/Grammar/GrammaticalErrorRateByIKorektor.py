@@ -3,7 +3,7 @@ import requests
 import nltk
 
 api_url = 'https://api.ikorektor.pl'
-api_key = '011031872a'
+api_key = '75b4fd805a'
 
 def check(text: str):
     params = {
