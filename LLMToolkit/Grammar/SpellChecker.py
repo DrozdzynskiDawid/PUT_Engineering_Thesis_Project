@@ -2,7 +2,7 @@ from spellchecker import SpellChecker
 import nltk
 from ..ModuleException import *
 
-def check_spelling(text: str):
+def checkSpelling(text: str):
     if type(text) != str:
         getTypeError()
     spell = SpellChecker()
