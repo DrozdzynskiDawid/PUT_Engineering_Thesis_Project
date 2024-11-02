@@ -16,10 +16,7 @@ def check(text: str):
     result = response.json()
     return result
 
-text_to_check = "Dobrze ułożone zdanie o polsce."
-result = check(text_to_check)
-
-def getGER(text: str):
+def getGERIKorektor(text: str):
     if type(text) != str:
         getTypeError()
     
