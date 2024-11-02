@@ -12,6 +12,9 @@ class TestGrammaticalErrorRateByLanguageTool(unittest.TestCase):
         value = getGER(text=getTestText4())
         self.assertEqual(value[0], 80.0)
 
+    def test_polish_text(self):
+        value = getGER(text=getTestText5())
+        self.assertEqual(value[0], 25.0)
 
 if __name__ == '__main__':
     unittest.main()

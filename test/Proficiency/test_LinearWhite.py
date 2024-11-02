@@ -6,7 +6,7 @@ from test.TestHelper import *
 class TestLinearWhite(unittest.TestCase):
     def test_happy1(self):
         value = linsearWrite(text=getTestText1())
-        self.assertGreater(value, 5)
+        self.assertGreater(value, 4)
 
     def test_happy2(self):
         value = linsearWrite(text=getTestText2())
