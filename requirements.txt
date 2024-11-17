@@ -24,6 +24,7 @@ Jinja2==3.1.4
 keyring==25.4.1
 langcodes==3.4.1
 language_data==1.2.0
+lingua-language-detector==2.0.2
 marisa-trie==1.2.0
 markdown-it-py==3.0.0
 MarkupSafe==2.1.5
