@@ -7,5 +7,6 @@ __all__ = [
     'PartOfSpeechTagging',
     'GrammaticalErrorRateByLanguageTool',
     'GrammaticalErrorRateByIKorektor',
-    'SpellChecker'
+    'SpellChecker',
+    'LanguageDetection'
 ]
