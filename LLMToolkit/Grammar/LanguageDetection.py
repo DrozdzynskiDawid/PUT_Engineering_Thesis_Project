@@ -12,4 +12,8 @@ def getLanguageConfidenceValue(text: str, top: int):
     top_languages = [confidence.language for confidence in sorted_confidence_values[:top]]
     top_detector = LanguageDetectorBuilder.from_languages(*top_languages).build()
     top_confidence_values = top_detector.compute_language_confidence_values(text)
-    return top_confidence_values
+    result = [
+        {"language": confidence.language.name, "confidence": confidence.value}
+        for confidence in top_confidence_values
+    ]
+    return result
