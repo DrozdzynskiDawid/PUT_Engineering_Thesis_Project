@@ -11,6 +11,7 @@ def syllables_component(doc):
         Token.set_extension("syllables_count", getter=lambda token: textstat.syllable_count(token.text))
     return doc
 
+
 class CounterHelper:
     text: str
     suffixes = ['ness', 'tion', 'ment', 'ity', 'er', 'or', 'ance', 'ence', 'ship', 'ism', 'ist', 'cy', 'al',
@@ -58,7 +59,7 @@ class CounterHelper:
         wordFrom = self.listFromFile(file)
         count = 0
         doc = self.setup()
-        tokens = [token.text.lower() for token in doc if not token.is_punct]
+        tokens = [token.text.lower() for token in doc if not token.is_punct and not token.is_space]
 
         for token in tokens:
             if token not in wordFrom:
@@ -67,12 +68,8 @@ class CounterHelper:
 
     def getWords(self):
         doc = self.setup()
-        chars = 0
-        for token in doc:
-            if token.is_punct:
-                chars += 1
-
-        return len(doc) - chars
+        words = [token.text for token in doc if not token.is_space and not token.is_punct]
+        return len(words)
 
     def getSentences(self):
         doc = self.setup()
@@ -95,7 +92,7 @@ class CounterHelper:
 
     def getCharacters(self):
         doc = self.setup()
-        characters = ''.join([token.text for token in doc if not token.is_punct])
+        characters = ''.join([token.text for token in doc if not token.is_space and not token.is_punct])
         return len(characters)
 
     def getComplexWords(self):
@@ -108,11 +105,23 @@ class CounterHelper:
 
         return count
 
-    def getEasyWords(self):
+    def getMoreThan6LettersWords(self):
         count = 0
+        doc = self.setup()
+        words = [token.text for token in doc if not token.is_space and not token.is_punct]
+
+        for word in words:
+            if len(word) >= 6:
+                count += 1
+        return count
+
+    def getEasyWords(self):
+        countEasy, countHard = 0, 0
         text = self.textWithoutSuffixes()
         for easy in text:
             if easy._.syllables_count < 3:
-                count += 1
+                countEasy += 1
+            else:
+                countHard += 1
 
-        return count
+        return countEasy, countHard

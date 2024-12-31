@@ -31,9 +31,13 @@ class TestColemanLiau(unittest.TestCase):
         counter = CounterHelper(text=getTestText1())
         self.assertEqual(counter.getComplexWords(), 9)
 
+    def test_get_long_words(self):
+        counter = CounterHelper(text="This is an example sentence to test difficult counting.")
+        self.assertEqual(counter.getMoreThan6LettersWords(), 4)
+
     def test_get_easy_words(self):
         counter = CounterHelper(text=getTestText1())
-        self.assertEqual(counter.getEasyWords(), 139)
+        self.assertEqual(counter.getEasyWords(), 139,9)
 
 if __name__ == '__main__':
     unittest.main()

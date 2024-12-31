@@ -12,9 +12,10 @@ def fryFormula(text: str):
     else:
         textPrim = random.sample(text.split(), 100)
         counter = CounterHelper(" ".join(textPrim))
+        words = counter.getSentences()
         sentences = counter.getSentences()
         syllables = counter.getSyllables()
         try:
-            return round(syllables / 100, 2), round(sentences / 100, 2)
+            return round(100*sentences/syllables, 2), round(100*sentences/words, 2)
         except ZeroDivisionError:
             getDivideByZeroError()
