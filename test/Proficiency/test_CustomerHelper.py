@@ -37,7 +37,7 @@ class TestColemanLiau(unittest.TestCase):
 
     def test_get_easy_words(self):
         counter = CounterHelper(text=getTestText1())
-        self.assertEqual(counter.getEasyWords(), 139,9)
+        self.assertEqual(counter.getEasyWords(), (139,9))
 
 if __name__ == '__main__':
     unittest.main()
