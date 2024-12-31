@@ -8,12 +8,10 @@ def spracheOriginalFormula(text: str):
     counter = CounterHelper(text)
     words = counter.getWords()
     sentences = counter.getSentences()
-    difficultWords = counter.getDifficultWords("dale_chall_word_list.txt")
+    difficultWords = counter.getDifficultWords("sprache_formula_word_list.txt")
 
     try:
-        avgSentenceLength = words / sentences
-        perDifficult = difficultWords / words * 100
-        score = 0.141 * avgSentenceLength + 0.086 * perDifficult + 0.839
+        score = 0.141 * words / sentences + 8.6 * difficultWords / words + 0.839
         return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()
@@ -25,12 +23,10 @@ def spracheRevisedFormula(text: str):
     counter = CounterHelper(text)
     words = counter.getWords()
     sentences = counter.getSentences()
-    difficultWords = counter.getDifficultWords("dale_chall_word_list.txt")
+    difficultWords = counter.getDifficultWords("sprache_formula_word_list.txt")
 
     try:
-        avgSentenceLength = words / sentences
-        perDifficult = difficultWords / words * 100
-        score = 0.121 * avgSentenceLength + 0.082 * perDifficult + 0.659
+        score = 0.121 * words / sentences + 8.2 * difficultWords / words + 0.659
         return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()
