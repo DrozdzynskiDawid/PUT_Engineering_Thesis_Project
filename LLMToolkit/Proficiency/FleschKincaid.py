@@ -11,7 +11,7 @@ def fleschKincaid(text: str):
     syllables = counter.getSyllables()
 
     try:
-        score = 206.835 - 1.015 * (words / sentences) - 84.6 * (syllables / words)
+        score = 206.835 - 1.015 * (words / sentences) - 83.6 * (syllables / words)
         return round(score, 2)
     except ZeroDivisionError:
         getDivideByZeroError()

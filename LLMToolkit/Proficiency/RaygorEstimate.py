@@ -1,7 +1,5 @@
 from .CounterHelper import *
 from ..ModuleException import *
-import random
-
 
 def raygorEstimate(text: str):
     if type(text) != str:
@@ -21,13 +19,13 @@ def raygorEstimate(text: str):
     else:
         textPrim = splitText[0:100] + splitText[round(splitTextLen / 2) - 51: round(splitTextLen / 2) + 50] + splitText[splitTextLen - 100: splitTextLen - 1]
 
-    n = len(textPrim)
-    textPrim = " ".join(textPrim)
-    counter = CounterHelper(" ".join(textPrim))
+    textPrimSplit = " ".join(textPrim)
+    counter = CounterHelper(textPrimSplit)
     sentences = counter.getSentences()
-    syllables = counter.getSyllables()
+    complexWords = counter.getMoreThan6LettersWords()
+    words = counter.getWords()
 
     try:
-        return round(syllables / n, 2), round(sentences / n, 2)
+        return round(100*complexWords/words, 2), round(100*sentences/words, 2)
     except ZeroDivisionError:
         getDivideByZeroError()
