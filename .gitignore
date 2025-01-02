@@ -16,3 +16,5 @@ LLMToolkit.egg-info
 junit
 dist
 build
+.vscode/settings.json
+__pycache__
