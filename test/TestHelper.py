@@ -68,3 +68,11 @@ def getTestText4():
 def getTestText5():
     text = "Na dworze jest piękna pogoda, słońce świeci jasno. Chciałbym pójść na spacer, ale zapomniałem mojej kurtki. Moja przyjaciółka powiedziała, że ona kupiła nowe buty, które są bardzo wygodne. Jednak, ja nie jestem pewien czy one będą dobrze pasować na mnie."
     return text
+
+def getTestText6():
+    text = "The quick brown fox jumps over the lazy dog."
+    return text
+
+def getTestText7():
+    text = "Brown fox jumps quickly over the lazy dog."
+    return text

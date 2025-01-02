@@ -1,4 +1,21 @@
+from nltk.translate.bleu_score import sentence_bleu
+
+
 def calculate_bleu(reference, hypothesis, weights=None):
+    if (len(reference) == 0):
+        raise ValueError("Reference is empty")
+
+    if (len(hypothesis) == 0):
+        raise ValueError("Hypothesis is empty")
+
+    if type(reference) is list:
+        reference = [reference]
+
+    if (type(reference) is not list):
+        reference = [reference.strip().split()]
+
+    if type(hypothesis) is not list:
+        hypothesis = hypothesis.strip().split()
 
     if weights is None:
         hypothesis_len = len(hypothesis) - 1
